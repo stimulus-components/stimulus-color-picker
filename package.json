@@ -1,0 +1,48 @@
+{
+  "name": "stimulus-color-picker",
+  "version": "0.0.0",
+  "description": "A Stimulus controller to create color picker..",
+  "keywords": [
+    "stimulus",
+    "stimulusjs",
+    "stimulus controller",
+    "color picker",
+    "colorpicker"
+  ],
+  "repository": "git@github.com:stimulus-components/stimulus-color-picker.git",
+  "bugs": {
+    "url": "https://github.com/stimulus-components/stimulus-color-picker/issues"
+  },
+  "author": "Guillaume Briday <guillaumebriday@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/stimulus-components/stimulus-color-picker",
+  "private": false,
+  "main": "dist/stimulus-color-picker.umd.js",
+  "module": "dist/stimulus-color-picker.es.js",
+  "scripts": {
+    "format": "prettier-standard  '**/*.{ts,css,html}' --format",
+    "lint": "prettier-standard  '**/*.{ts,css,html}' --lint",
+    "dev": "vite",
+    "prod": "vite build --config /dev/null",
+    "build": "tsc --noEmit && vite build",
+    "version": "yarn build",
+    "np": "np --no-2fa"
+  },
+  "dependencies": {
+    "@simonwep/pickr": "1.8.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.0",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-typescript": "^7.16.7",
+    "@hotwired/stimulus": "^3.0.1",
+    "np": "^7.6.0",
+    "prettier-standard": "16.4.1",
+    "typescript": "^4.5.5",
+    "vite": "^2"
+  },
+  "peerDependencies": {
+    "@hotwired/stimulus": "^3.0.0"
+  }
+}
