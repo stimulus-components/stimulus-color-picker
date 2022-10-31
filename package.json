@@ -1,7 +1,7 @@
 {
   "name": "stimulus-color-picker",
   "version": "0.0.0",
-  "description": "A Stimulus controller to create color picker..",
+  "description": "A Stimulus controller to create color picker.",
   "keywords": [
     "stimulus",
     "stimulusjs",
@@ -23,7 +23,7 @@
     "format": "prettier-standard  '**/*.{ts,css,html}' --format",
     "lint": "prettier-standard  '**/*.{ts,css,html}' --lint",
     "dev": "vite",
-    "prod": "vite build --config /dev/null",
+    "prod": "vite build --mode netlify",
     "build": "tsc --noEmit && vite build",
     "version": "yarn build",
     "np": "np --no-2fa"

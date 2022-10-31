@@ -1,19 +1,19 @@
-# Stimulus Timeago
+# Stimulus Color Picker
 
-[![](https://img.shields.io/npm/dt/stimulus-timeago.svg)](https://www.npmjs.com/package/stimulus-timeago)
-[![](https://img.shields.io/npm/v/stimulus-timeago.svg)](https://www.npmjs.com/package/stimulus-timeago)
-[![](https://github.com/stimulus-components/stimulus-timeago/workflows/Lint/badge.svg)](https://github.com/stimulus-components/stimulus-timeago)
-[![](https://github.com/stimulus-components/stimulus-timeago/workflows/Test/badge.svg)](https://github.com/stimulus-components/stimulus-timeago)
-[![](https://img.shields.io/github/license/stimulus-components/stimulus-timeago.svg)](https://github.com/stimulus-components/stimulus-timeago)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/d62d950e-aae7-464d-8333-1078a16ec481/deploy-status)](https://stimulus-timeago.netlify.com)
+[![](https://img.shields.io/npm/dt/stimulus-color-picker.svg)](https://www.npmjs.com/package/stimulus-color-picker)
+[![](https://img.shields.io/npm/v/stimulus-color-picker.svg)](https://www.npmjs.com/package/stimulus-color-picker)
+[![](https://github.com/stimulus-components/stimulus-color-picker/workflows/Lint/badge.svg)](https://github.com/stimulus-components/stimulus-color-picker)
+[![](https://github.com/stimulus-components/stimulus-color-picker/workflows/Test/badge.svg)](https://github.com/stimulus-components/stimulus-color-picker)
+[![](https://img.shields.io/github/license/stimulus-components/stimulus-color-picker.svg)](https://github.com/stimulus-components/stimulus-color-picker)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d62d950e-aae7-464d-8333-1078a16ec481/deploy-status)](https://stimulus-color-picker.netlify.com)
 
 ## Getting started
 
-A Stimulus controller to create color picker..
+A Stimulus controller to create color picker.
 
 ## 📚 Documentation
 
-See [stimulus-timeago documentation](https://stimulus-components.netlify.app/docs/components/stimulus-timeago/).
+See [stimulus-color-picker documentation](https://www.stimulus-components.com/docs/stimulus-color-picker/).
 
 ## 👷‍♂️ Contributing
 

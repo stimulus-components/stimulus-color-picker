@@ -1,18 +1,23 @@
-const path = require('path')
+import path from 'path'
 
-module.exports = {
-  build: {
-    ssr: false,
-    lib: {
-      entry: path.resolve(__dirname, 'src/index.ts'),
-      name: 'stimulus-color-picker'
-    },
-    rollupOptions: {
-      external: ['Pickr', 'stimulus'],
-      output: {
-        globals: {
-          stimulus: 'Stimulus',
-          Pickr: 'pickr'
+export default ({ mode }) => {
+  if (mode === 'netlify') {
+    return {}
+  }
+
+  return {
+    build: {
+      lib: {
+        entry: path.resolve(__dirname, 'src/index.ts'),
+        name: 'stimulus-color-picker'
+      },
+      rollupOptions: {
+        external: ['@simonwep/pickr', '@hotwired/stimulus'],
+        output: {
+          globals: {
+            '@simonwep/pickr': 'Pickr',
+            '@hotwired/stimulus': 'Stimulus'
+          }
         }
       }
     }
