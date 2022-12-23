@@ -1,6 +1,7 @@
-import path from 'path'
+import { resolve } from 'path'
+import { defineConfig } from 'vite'
 
-export default ({ mode }) => {
+export default defineConfig(({ mode }) => {
   if (mode === 'netlify') {
     return {}
   }
@@ -8,8 +9,9 @@ export default ({ mode }) => {
   return {
     build: {
       lib: {
-        entry: path.resolve(__dirname, 'src/index.ts'),
-        name: 'stimulus-color-picker'
+        entry: resolve(__dirname, 'src/index.ts'),
+        name: 'StimulusColorPicker',
+        fileName: 'stimulus-color-picker'
       },
       rollupOptions: {
         external: ['@simonwep/pickr', '@hotwired/stimulus'],
@@ -22,4 +24,4 @@ export default ({ mode }) => {
       }
     }
   }
-}
+})
