@@ -5,7 +5,6 @@
 [![](https://github.com/stimulus-components/stimulus-color-picker/workflows/Lint/badge.svg)](https://github.com/stimulus-components/stimulus-color-picker)
 [![](https://github.com/stimulus-components/stimulus-color-picker/workflows/Test/badge.svg)](https://github.com/stimulus-components/stimulus-color-picker)
 [![](https://img.shields.io/github/license/stimulus-components/stimulus-color-picker.svg)](https://github.com/stimulus-components/stimulus-color-picker)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/69899499-bbb0-4bc8-96a3-d6960f5c479a/deploy-status)](https://stimulus-color-picker.stimulus-components.com/)
 
 ## Getting started
 
