@@ -1,44 +1,42 @@
-import { Controller } from '@hotwired/stimulus'
-import Pickr from '@simonwep/pickr'
+import { Controller } from "@hotwired/stimulus"
+import Pickr from "@simonwep/pickr"
 
-export default class extends Controller {
-  // @ts-ignore
-  element: HTMLElement
+export default class ColorPicker extends Controller<HTMLElement> {
   inputTarget: HTMLInputElement
-  buttonTarget: HTMLElement
+  buttonTarget: HTMLButtonElement
   themeValue: Pickr.Theme
   picker: Pickr
 
-  static targets = ['button', 'input']
+  static targets = ["button", "input"]
 
   static values = {
     theme: {
       type: String,
-      default: 'classic'
-    }
+      default: "classic",
+    },
   }
 
-  initialize () {
+  initialize() {
     this.onSave = this.onSave.bind(this)
   }
 
-  connect () {
+  connect() {
     this.picker = Pickr.create({
       el: this.buttonTarget,
       theme: this.themeValue,
       default: this.inputTarget.value,
       swatches: this.swatches,
-      components: this.componentOptions
+      components: this.componentOptions,
     })
 
-    this.picker.on('save', this.onSave)
+    this.picker.on("save", this.onSave)
   }
 
-  disconnect () {
+  disconnect() {
     this.picker.destroy()
   }
 
-  onSave (color: Pickr.HSVaColor) {
+  onSave(color: Pickr.HSVaColor) {
     this.inputTarget.value = null
 
     if (color) {
@@ -48,7 +46,7 @@ export default class extends Controller {
     this.picker.hide()
   }
 
-  get componentOptions (): Object {
+  get componentOptions(): object {
     return {
       preview: true,
       hue: true,
@@ -56,23 +54,23 @@ export default class extends Controller {
       interaction: {
         input: true,
         clear: true,
-        save: true
-      }
+        save: true,
+      },
     }
   }
 
-  get swatches (): Array<string> {
+  get swatches(): string[] {
     return [
-      '#A0AEC0',
-      '#F56565',
-      '#ED8936',
-      '#ECC94B',
-      '#48BB78',
-      '#38B2AC',
-      '#4299E1',
-      '#667EEA',
-      '#9F7AEA',
-      '#ED64A6'
+      "#A0AEC0",
+      "#F56565",
+      "#ED8936",
+      "#ECC94B",
+      "#48BB78",
+      "#38B2AC",
+      "#4299E1",
+      "#667EEA",
+      "#9F7AEA",
+      "#ED64A6",
     ]
   }
 }
